@@ -1,5 +1,5 @@
 .venv
-.env
+
 ../.idea
 __pycached__/
 __pycache__/
@@ -125,7 +125,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+
 .venv
 env/
 venv/
