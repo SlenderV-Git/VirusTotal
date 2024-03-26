@@ -9,13 +9,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 # Копируем файлы requirements.txt в рабочую директорию
-COPY requirements.txt .
+COPY . .
 
 # Устанавливаем зависимости
 RUN pip install --no-cache-dir -r requirements.txt
-
-# Копируем главный файл с кодом бота и все другие файлы
-COPY src /app
 
 # Запускаем приложение
 CMD ["python", "main.py"]
